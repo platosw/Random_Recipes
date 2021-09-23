@@ -1,6 +1,12 @@
 document.getElementById('mealBtn').addEventListener('click', function () {
   $.ajax('https://www.themealdb.com/api/json/v1/1/random.php').then(function (data) {
     // console.log(data);  =>  check for getting data
+    // top btn function - when click this button, this page scroll to the top
+    function top() {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 300);
+    }
     render(data);
   });
 })
@@ -17,13 +23,6 @@ function render(getData) {
     } else {
       break;
     }
-  }
-
-  // top btn function - when click this button, this page scroll to the top
-  function top() {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 300);
   }
 
   // make variable for using as HTML file
