@@ -1,5 +1,3 @@
-'use strict';
-
 // click event
 document.getElementById('mealBtn').addEventListener('click', function () {
   $.ajax('https://www.themealdb.com/api/json/v1/1/random.php').then(function (data) {
