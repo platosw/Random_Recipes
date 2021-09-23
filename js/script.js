@@ -1,5 +1,5 @@
-// click event
-document.getElementById('mealBtn').addEventListener('click', function () {
+
+document.getElementById('mealBtn').addEventListener('click', function () {      // click event
   $.ajax('https://www.themealdb.com/api/json/v1/1/random.php').then(function (data) {
     // console.log(data);  =>  check for getting data
     render(data);
