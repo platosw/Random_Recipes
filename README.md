@@ -24,7 +24,7 @@ A simple website that displays random meal random recipe data using the mealdb.c
 
 
 ## Getting Started
-<a href="https://platosw.github.io/GA-firstProject/">Click Here</a> to see the deployed app!
+<a href="https://randomrecipes-verjs.netlify.app">Click Here</a> to see the deployed app!
 
 
 <br>
