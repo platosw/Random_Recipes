@@ -1,12 +1,6 @@
 document.getElementById('mealBtn').addEventListener('click', function () {
   $.ajax('https://www.themealdb.com/api/json/v1/1/random.php').then(function (data) {
     // console.log(data);  =>  check for getting data
-    // top btn function - when click this button, this page scroll to the top
-    function top() {
-      $('html,body').animate({
-        scrollTop: 0
-      }, 300);
-    }
     render(data);
   });
 })
@@ -56,11 +50,8 @@ function render(getData) {
         <div id="youtube">
             <iframe id="video" src="https://www.youtube.com/embed/${getData.meals[0].strYoutube.slice(-11)}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <br>
-        <div id="top">
-        <button id="topBtn" onclick="top()"><strong>Top</strong></button>
-        </div>
   `;
+  
   // put hideInnerHTML into <main> on document
   document.querySelector('.hiddenHTML').innerHTML = hideInnerHTML;
 }
