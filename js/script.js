@@ -5,13 +5,6 @@ document.getElementById('mealBtn').addEventListener('click', function () {
   });
 })
 
-// top btn function - when click this button, this page scroll to the top
-function top() {
-  $('html,body').animate({
-    scrollTop: 0
-  }, 300);
-}
-
 // try to hide this contents in my own way
 function render(getData) {
 
@@ -24,6 +17,13 @@ function render(getData) {
     } else {
       break;
     }
+  }
+
+  // top btn function - when click this button, this page scroll to the top
+  function top() {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 300);
   }
 
   // make variable for using as HTML file
