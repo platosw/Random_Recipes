@@ -72,13 +72,13 @@ function render(getData) {
 
 // sharing sns function
 function shareFacebook() {
-  var sendUrl = "https://platosw.github.io/GA-firstProject/"; // send URL
+  var sendUrl = "https://randomrecipes-verjs.netlify.app"; // send URL
   window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
 }
 
 function shareTwitter() {
   var sendText = "Random Recipes"; // send text
-  var sendUrl = "https://platosw.github.io/GA-firstProject/"; // send URL
+  var sendUrl = "https://randomrecipes-verjs.netlify.app"; // send URL
   window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
 }
 
